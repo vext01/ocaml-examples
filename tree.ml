@@ -1,4 +1,9 @@
 (* define a tree like so *)
+
+(* for a single type (int here) *)
+type tree = Leaf of int | Node of tree * int *  tree;;
+
+(* more generally using polymorphic type *)
 type 'a tree = Leaf of 'a | Node of 'a tree * 'a * 'a tree;;
 
 (* A leaf is constructed like this *)
