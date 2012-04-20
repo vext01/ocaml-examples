@@ -1,4 +1,4 @@
-let st:string Stack.t = Stack.create();;
+let st = Stack.create();;
 
 Stack.push "1" st;;
 Stack.push "2" st;;

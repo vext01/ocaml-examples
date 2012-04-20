@@ -19,4 +19,3 @@ print_list even;;
 (* folding a list *)
 let res = List.fold_left (+) 0 l;;
 Printf.printf "folded addition = %d\n" res;;
-
