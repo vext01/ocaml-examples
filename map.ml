@@ -18,3 +18,6 @@ let printMap m =
   StringMap.iter (fun key value -> Printf.printf "%s -> %d\n" key value) m;;
 
 printMap map;;
+
+(* no Integer module so an int map needs magic *)
+module IntMap = Map.Make(struct type t = int let compare = compare end);;
